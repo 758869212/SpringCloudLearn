@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eureka-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/758869212/ag_config.git
+      bus:
+        trace:
+          enabled: true
+  rabbitmq:
+    host: localhost
+    port: 18004
+
+server:
+  port: 8888
+
+management:
+  security:
+    enabled: false
